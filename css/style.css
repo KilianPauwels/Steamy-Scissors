@@ -36,6 +36,8 @@ button{
 
 .searchfield{
 	display: inline-block;
+	line-height: 6.5em;
+	bottom: 2px;
 }
 
 .main_activity{
