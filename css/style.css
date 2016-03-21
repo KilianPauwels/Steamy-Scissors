@@ -1,6 +1,6 @@
 body {
 	background-color: grey;
-	background-image: url("../img/bg.png");
+	background-image: url("../img/bg2.png");
 	background-repeat: repeat;
 	
 	/* background-image:  url("../img/octoacidtrip.gif"); */
@@ -42,6 +42,7 @@ button{
 	border: 2px solid red;
 	display: inline-block;
 	margin-left: 0px;
+	float: left !important;
 }
 
 .container div{
