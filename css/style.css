@@ -2,6 +2,7 @@ body {
 	background-color: grey;
 	background-image: url("../img/bg2.png");
 	background-repeat: repeat;
+	background-position: relative;
 	
 	/* background-image:  url("../img/octoacidtrip.gif"); */
 	
@@ -36,8 +37,11 @@ button{
 
 .searchfield{
 	display: inline-block;
-	line-height: 6.5em;
+	margin-bottom: -20px;
+	line-height: 2.2em;
 	bottom: 2px;
+	font-size: 40px;
+	margin-top: 5px;
 }
 
 .main_activity{
@@ -57,6 +61,13 @@ button{
 }
 
 .container{
+
+}
+
+h1{
+	background-color: rgba(250,120,120,0.5);
+	font-weight: bold;
+	border: 3px dashed rgb(250,20,20);
 
 }
 
