@@ -24,7 +24,22 @@ button{
 	font-size: 20px;
 	color: white;
 	text-shadow: 2px 2px black;
-	margin-left: 3px;
+	margin-left: 1px;
+}
+
+.artistbutton{
+	background-color: rgba(237,14,25,0.3);
+	width: 225px;
+	height: 260px;
+	border: 1px solid pink;
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px black;
+	text-align: center;
+	/*display: inline-block;*/
+	margin-bottom: 15px;
+	margin-right: 15px;
+	padding-bottom: 15px;
 }
 
 .nav_img{
@@ -43,7 +58,12 @@ button{
 	bottom: 2px;
 	font-size: 40px;
 	margin-top: 5px;
+	width: 200px;
+	background-color: rgba(250,120,120,0.5);
+	text-shadow: 1px 1px red;
+	font-color:white;
 }
+
 
 .main_activity{
 	border: 2px solid red;
@@ -52,24 +72,32 @@ button{
 	float: left !important;
 }
 
+.mainrepeat{
+	width: 220px;
+	/*margin-left: 25px;*/
+	display: inline-block;
+	margin: 0 auto;
+}
+
 .container div{
 	display:inline-block;
-	border: 2px solid red;
 	margin-left: 0px;
 	padding-left: 0px;
 
 
 }
 
-.container{
-
-}
 
 h1{
 	background-color: rgba(250,120,120,0.5);
 	font-weight: bold;
 	border: 3px dashed rgb(250,20,20);
 
+}
+
+#sidemenu{
+	display: inline-block;
+	float: right;
 }
 
 footer{

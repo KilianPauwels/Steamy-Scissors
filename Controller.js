@@ -6,7 +6,8 @@ app.controller("artistController", ["$scope", function($scope){
 		name: "Taylor Swift",
 		age: 27,
 		description: "beste vrouwelijke artiest ooit",
-		facebooklink: "https://www.facebook.com/TaylorSwift/?fref=ts"
+		facebooklink: "https://www.facebook.com/TaylorSwift/?fref=ts",
+		img: "http://www.etonline.com/fashion/2015/05/24151317/300_taylor_swift_472314146.jpg"
 	},
 	{
 		name: "Kanye West",
@@ -22,6 +23,7 @@ app.controller("artistController", ["$scope", function($scope){
 	{
 		name: "Sven Bollaerts",
 		age: 420,
-		description: "420 blaze it"
+		description: "420 blaze it",
+		img: "http://i68.tinypic.com/mm3mo3.jpg"
 	}]
 }]);
