@@ -24,6 +24,7 @@ button{
 	font-size: 20px;
 	color: white;
 	text-shadow: 2px 2px black;
+	margin-left: 3px;
 }
 
 .nav_img{

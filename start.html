@@ -20,39 +20,19 @@
 		<input ng-model="search" type="text" class="searchfield" placeholder="Search"></input>
 	</nav>
 
-	<div class="container">
+	<div ng-controller="artistController" class="container">
+		<h1>{{ title }}</h1>
 		<div class="col-md-8 col-xs-12" id="main_activity">
-			<h1>Top artists</h1>
-			<button >Taylor Swift</button>
-			<div class="fb-like" 
-					data-href="https://www.facebook.com/TaylorSwift/?fref=ts" 
+			<div ng-repeat="artist in artists" id="mainrepeat">
+			<button >{{artist.name }}</button>
+				<div class="fb-like" 
+					data-href="{{artist.facebooklink}}" 
 					data-layout="standard" 
 					data-action="like" 
 					data-show-faces="false"
 					data-width="100">
 				</div>
-			<button>Kanye West</button>
-			<div
-  				class="fb-like"
-  				data-share="true"
-  				data-width="100"
-  				data-show-faces="true">
 			</div>
-			<button>Wart scheppers</button>
-			<div
-  				class="fb-like"
-  				data-share="true"
-  				data-width="100"
-  				data-show-faces="true">
-			</div>
-			<button>Sven Bolle</button>
-			<div
-  				class="fb-like"
-  				data-share="true"
-  				data-width="100"
-  				data-show-faces="true">
-			</div>
-			
 		</div>
 		
 		<div class="col-md-4 col-xs-12" id="side_menu">
@@ -71,7 +51,7 @@
 	
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="controller.js"></script>
+<script src="Controller.js"></script>
 </body>
 </html>
-<!-- Ward is een loser,  3de commit sinds dit is toegevoegd-->
+<!-- Ward is een loser,  5de commit sinds dit is toegevoegd-->
