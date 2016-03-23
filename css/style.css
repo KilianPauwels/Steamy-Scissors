@@ -60,7 +60,7 @@ button{
 	margin-top: 5px;
 	width: 200px;
 	background-color: rgba(250,120,120,0.5);
-	text-shadow: 1px 1px red;
+	text-shadow: 1px 1px white;
 	font-color:white;
 }
 
@@ -79,6 +79,10 @@ button{
 	margin: 0 auto;
 }
 
+.container{
+	display: inline-block; 
+}
+
 .container div{
 	display:inline-block;
 	margin-left: 0px;
@@ -92,6 +96,7 @@ h1{
 	background-color: rgba(250,120,120,0.5);
 	font-weight: bold;
 	border: 3px dashed rgb(250,20,20);
+	text-shadow: 1px 1px white;
 
 }
 
