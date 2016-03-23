@@ -20,7 +20,9 @@ app.controller("artistController", ["$scope", function($scope){
 		name: "Wart Scheppers",
 		age: 19,
 		description: "junk",
-		img:"https://scontent-bru2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1465376_10205959416805872_6438716955300965378_n.jpg?oh=ac49fdbacc8378cd0b091357c49c0734&oe=578B3436"
+		/*img:"https://scontent-bru2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1465376_10205959416805872_6438716955300965378_n.jpg?oh=ac49fdbacc8378cd0b091357c49c0734&oe=578B3436"*/
+		img: "http://www.aufderaxe.com/wp-content/uploads/dikke_dennis_11.jpg"
+
 	},
 	{
 		name: "Sven Bollaerts",

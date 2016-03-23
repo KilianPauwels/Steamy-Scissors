@@ -7,17 +7,23 @@
 
 <title>Steamy scissors</title>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
 <meta charset="utf-8">
 </head>
 <body ng-app="myapp" >
 <script src="facebookSDK.js">
 </script>
-	<nav>
-		<a href="start.html"><img src="img/logo.png" class="nav_img"></a>
-		<a href="#"><button class="navbutton" >Artists</button></a>
+
+
+
+	<nav class="col-md-12 cox-xs-12">
+		<a href="http://www.soundcloud.com"><img src="img/logo.png" class="nav_img"></a>
+		<button class="navbutton">Artists</button>
 		<button class="navbutton">Tracks</button>
-		<a href="about.html"><button class="navbutton">About</button></a>
-		<input ng-model="search" type="text" class="searchfield" placeholder="Search"></input>
+		<button class="navbutton">About</button>
+		<button class="navbutton">Add artist</button>
+		<br>
+		<input ng-model="search" type="text" class="searchfield" placeholder="Search" results="3"></input>
 	</nav>
 
 	<div ng-controller="artistController" class="container">
@@ -28,21 +34,23 @@
 			
 			<div ng-repeat="artist in artists" id="mainrepeat">
 				<div class="artistbutton" margin-right="15">
-					<img ng-src="{{artist.img}}" width="224" height="189">
+					<img ng-src="{{artist.img}}" width="223" height="189">
 					{{artist.name }}
-					
+					<br>
 					<div class="fb-like" 
 						data-href="{{artist.facebooklink}}" 
-						data-layout="standard" 
+						data-layout="button_count" 
 						data-action="like" 
 						data-show-faces="false"
-						data-width="100"
+						data-small-header="true"
+						data-colorscheme="dark"
+						data-share="false"
 						>
 					</div>
 
 				</div>
-				
 			</div>
+
 		</div>
 	</div>
 		<div class="col-md-1 col-xs-12" id="side_menu">
@@ -64,4 +72,4 @@
 <script src="Controller.js"></script>
 </body>
 </html>
-<!-- Ward is een loser,  7de commit sinds dit is toegevoegd-->
+<!-- Ward is een loser,  5de commit sinds dit is toegevoegd-->
