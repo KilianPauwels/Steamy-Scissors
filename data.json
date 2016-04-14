@@ -1,0 +1,37 @@
+	{"data":[{
+		"object_id" : 1,
+		"name": "Taylor Swift",
+		"age": 27,
+		"description": "beste vrouwelijke artiest ooit",
+		"facebooklink": "https://www.facebook.com/TaylorSwift/?fref=ts",
+		"img": "http://www.etonline.com/fashion/2015/05/24151317/300_taylor_swift_472314146.jpg"
+		}
+		,
+		{
+		"object_id" : 2,
+		"name": "Kanye West",
+		"age": 69,
+		"description": "loser",
+		"facebooklink": "https://www.facebook.com/pages/Kanye-West/203406986358515?fref=ts&rf=107777555911981",
+		"img": "https://pbs.twimg.com/profile_images/585565077207678977/N_eNSBXi.jpg"
+		}
+		,
+		{
+		"object_id" : 3,
+		"name": "Wart Scheppers",
+		"age": 19,
+		"description": "junk",
+		"img": "http://www.aufderaxe.com/wp-content/uploads/dikke_dennis_11.jpg"
+		}
+		,
+		{
+		"object_id" : 4,
+		"name": "Sven Bollaerts",
+		"age": 420,
+		"description": "420 blaze it",
+		"img": "http://i68.tinypic.com/mm3mo3.jpg"
+		}]
+
+	}
+	
+	
