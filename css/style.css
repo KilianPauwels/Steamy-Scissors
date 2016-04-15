@@ -129,3 +129,8 @@ footer{
         width: 100%;
     }
 }
+
+#upload{
+	padding: 50px;
+	text-align: center;
+}
