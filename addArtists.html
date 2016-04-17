@@ -12,9 +12,9 @@
 <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 <meta charset="utf-8">
 </head>
-<body ng-app="myapp" >
+<body ng-app="artistDatabase">
 <script src="facebookSDK.js"></script>
-<script src="firebaseSDK.js"></script>
+<script src="addArtistController.js"></script>
 
 
 
@@ -28,33 +28,20 @@
 		<input ng-model="search" type="text" class="searchfield" placeholder="Search" results="3"></input>
 	</nav>
 
-	<div class="col-md-12 cox-xs-12" id="upload">
-		<ul>
-			<li><h2>Naam Artiest</h2>
-				<input class="uploadBox" type="text" id="naam" maxlength="30"></input>
-			</li>
-			<li>
-				<h2>Leeftijd</h2>
-				<input class="uploadBox" type="text" id="age" maxlength="30"></input>
-			</li>	
-			<li>
-				<h2>Beschrijving</h2>
-				<input class="uploadBox" type="text" id="description" maxlength="30"></input>
-			</li>
-			<li>
-				<h2>FacebookLink</h2>
-				<input class="uploadBox" type="text" id="facebook"></input>
-			</li>
-			<li>
-				<h2>Afbeelding</h2>
-				<input class="uploadBox" type="text" id="naam"></input>
-			</li>
-			<li>
-				<button ng-model="upload">Upload</button>
-			</li>
+	<div class="col-md-12 cox-xs-12" id="upload" ng-controller="myController as ctrl">
+		<form name="myForm" ng-submit="ctrl.upload()">
+			Name: <input type="text" ng-model="ctrl.artist.name">
+			Age: <input type="text" ng-model="ctrl.artist.age">
+			Description: <input type="text" ng-model="ctrl.artist.description">
+			Facebooklink: <input type="text" ng-model="ctrl.artist.facebooklink">
+			Image Link: <input type="text" ng-model="ctrl.artist.img">
+			<input type="submit" value="Upload">
+		</form>
+
+	</div>
 	
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="Controller.js"></script>
+<script src="addArtistController.js"></script>
 </body>
 </html>

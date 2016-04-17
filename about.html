@@ -12,16 +12,16 @@
 </head>
 <body>
 	<script src="facebookSDK.js"></script>
-		<nav>
-			<a href="start.html"><img src="img/logo.png" class="nav_img"></a>
-			<a href="#"><button class="navbutton" >Artists</button></a>
-			<button class="navbutton">Tracks</button>
-			<a href="about.html"><button class="navbutton">About</button></a>
-			<a href="addArtists.html"><button class="navbutton">Add artist</button></a>
+		<nav class="col-md-12 cox-xs-12">
+		<a href="start.html"><img src="img/logo.png" class="nav_img"></a>
+		<button class="navbutton">Artists</button>
+		<button class="navbutton">Tracks</button>
+		<a href="about.html"><button class="navbutton">About</button></a>
+		<a href="addArtists.html"><button class="navbutton">Add artist</button></a>
+		<br>
+		<input ng-model="search" type="text" class="searchfield" placeholder="Search" results="3"></input>
+	</nav>
 
-			<br>
-			<input ng-model="search" type="text" class="searchfield" placeholder="Search" results="3"></input>
-		</nav>
 
 		<div class="container">
 			<div class="col-md-10 col-xs-12">
