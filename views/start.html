@@ -7,7 +7,7 @@
 			<div ng-repeat="artist in artists" id="mainrepeat">
 				<div class="artistbutton" margin-right="15">
 					<img ng-src="{{artist.img}}" width="223" height="189">
-					{{artist.name }}
+					<a ng-click="getArtist" href="#Artist" id="artistlink">{{artist.name }}</a>
 					<br>
 					<div class="fb-like" 
 						data-href="{{artist.facebooklink}}" 

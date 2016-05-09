@@ -86,6 +86,10 @@ button{
 	margin-right: 8px;
 }
 
+#namelink{
+	color: white;
+}
+
 .container{
 	display: inline-block; 
 }
