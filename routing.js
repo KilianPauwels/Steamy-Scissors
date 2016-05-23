@@ -24,7 +24,7 @@ app.controller("startController", function($scope,$http){
 	$scope.artists =[];
 	$scope.namen = [];
 
-		$http.get("onzedatabase/.json")
+		$http.get("https://burning-torch-1101.firebaseio.com/.json")
 		.success(function(results){
 			$scope.artists = results.data;
 			console.log("in succes");
@@ -55,7 +55,7 @@ app.controller("addArtistsController", [function($scope,$http){
 		img:'',
 		name:''
 	};
-	var data = new Firebase("onzedatabase/data")
+	var data = new Firebase("https://burning-torch-1101.firebaseio.com/data")
 
 	this.upload = function(){
 		console.log("user clicked upload", this.artist);
