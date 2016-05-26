@@ -6,9 +6,11 @@
 			
 			<div ng-repeat="artist in artists" id="mainrepeat">
 				<div class="artistbutton" margin-right="15">
-					<img ng-src="{{artist.img}}" width="223" height="189">
-					<a ng-click="getArtist" href="#Artist" id="artistlink">{{artist.name }}</a>
-					<br>
+					<a ng-click="getArtist" href="#Artist" id="artistlink">
+					<img ng-src="{{artist.img}}" width="223" height="189" id="artistimg">
+
+					{{artist.name }}</a>
+					
 					<div class="fb-like" 
 						data-href="{{artist.facebooklink}}" 
 						data-layout="button_count" 

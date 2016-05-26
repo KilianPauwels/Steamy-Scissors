@@ -23,6 +23,7 @@ button{
 	color: white;
 	text-shadow: 2px 2px black;
 	text-align: center;
+
 }
 
 .navbutton{
@@ -31,8 +32,17 @@ button{
 	margin-left: 1px;
 	margin-bottom:3px;
 	margin-top: 3px;
+
 }
 
+@media only screen and (min-width: 501px) {
+nav{
+	min-width: 602px;
+}
+
+ul{
+	min-width: 602px;
+}
 .artistbutton{
 	/* Dit is een div */
 	background-color: rgba(237,14,25,0.3);
@@ -43,10 +53,20 @@ button{
 	color: white;
 	text-shadow: 2px 2px black;
 	text-align: center;
-	display: inline-block;
+	display: inline;
 	margin-bottom: 15px;
 	margin-right: 15px;
 	padding-bottom: 15px;
+
+}
+
+#mainrepeat{
+	width: 220px;
+	/*margin-left: 25px;*/
+	display: inline-block;
+	margin-right: 8px;
+}
+
 }
 
 .nav_img{
@@ -79,12 +99,7 @@ button{
 	float: left !important;
 }
 
-#mainrepeat{
-	width: 220px;
-	/*margin-left: 25px;*/
-	display: inline-block;
-	margin-right: 8px;
-}
+
 
 #artistlink{
 	color: white;
@@ -92,6 +107,7 @@ button{
 
 .container{
 	display: inline-block; 
+	background-color: rgba(237,14,25,0.3);
 }
 
 .container div{
@@ -102,13 +118,25 @@ button{
 
 }
 
+#artistlink{
+	color: white;
+	text-decoration: none !important;	
+}
+
+
 
 h1{
 	background-color: rgba(250,120,120,0.5);
 	font-weight: bold;
-	border: 3px dashed rgb(250,20,20);
-	text-shadow: 1px 1px white;
-
+	border: 3px groove rgba(250,20,20,0.5);
+	text-shadow: 1px 1px black;
+	font-family: 'Marck Script', cursive;
+	color: rgb(250,220,220);
+	-webkit-box-shadow: 10px 10px 100px 30px rgba(153,0,153,0.75);
+	-moz-box-shadow: 10px 10px 100px 30px rgba(153,0,153,0.75);
+	box-shadow: 10px 10px 100px 30px rgba(153,0,153,0.75);
+	padding-left: 15px;
+	text-align: center;
 }
 
 #sidemenu{
@@ -118,24 +146,123 @@ h1{
 
 footer{
 	display: inline-block;
-	width: 100%;
-	padding-left: 50px;
-
+	width: 80%;
+	margin: 20px;
+	font-style: italic;
 }
 
 .aboutp {
 	color:white;
-	background-color: rgba(237,14,25,0.3);
+	
+}
+
+#upload{
+	padding: 15px;
+	text-align: center;
+	background-color: rgba(237,15,25,0.3);
+}
+
+#upload p{
+	color: white;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px black;
+}
+
+input[type="submit"]{
+	text-align: center;
+	background-color: rgba(237,15,25,0.3);
+	border: 1px solid black;
+	box-shadow: 2px red;
 }
 
 @media only screen and (max-width: 500px) {
     /* For mobile phones: */
-    [class*="col-"] {
+    /*[class*="col-"] {
         width: 100%;
-    }
+    }*/
+
+    .navbutton{
+		width: 100%;
+		height: 20px;
+		margin-left: 1px;
+		margin-bottom:3px;
+		margin-top: 3px;
+		font-size: 10px;
+		display: block;
+	}
+
+	.nav_img{
+		width: 50px;
+		height: 50px;
+		display: block;
+		margin: 0 auto;
+		padding-left: 0px;
+		
+	}
+
+	.searchfield{
+		display: inline-block;
+		line-height: 0.8em;
+		font-size: 10px;
+		margin-top: 0px;
+		padding-left: 3px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(250,120,120,0.5);
+		text-shadow: -1px -1px black;
+		font-color:white;
+		color: white;
+		}
+
+    #artistimg{
+    	width: 90px;
+    	height: 100px;
+    	}
+
+    .artistbutton{
+	/* Dit is een div */
+		background-color: rgba(237,14,25,0.3);
+		width: 92px;
+		height: 148px;
+		border: 1px solid pink;
+		font-size: 10px;
+		color: white;
+		text-shadow: 1px 1px black;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-right: 5px;
+		padding-bottom: 5px;
+	}
+
+	.addArtistForm{
+		
+		margin: 0 auto;
+		left:50%;
+
+	}
+
+	#artistformcentered{
+		width: 400px;
+		margin: 0 auto;
+		position: fixed;
+	}
+
+	#upload {
+		height: 300px;
+		background-color: rgba(237,14,25,0.3);
+	}
+
+
+	#target ul button{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }
 
-#upload{
-	padding: 50px;
-	text-align: center;
+hr{
+	margin-top: -5px;
+	margin-bottom: -7px;
 }
