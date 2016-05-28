@@ -7,6 +7,10 @@ app.config(function($routeProvider){
 			templateUrl : "views/start.html",
 			controller : "startController"
 		})
+			.when("/artists",{
+			templateUrl : "views/artists.html",
+			controller : "	artistController"
+		})
 
 		.when("/about", {
 			templateUrl : "views/about.html",
