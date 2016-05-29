@@ -16,6 +16,10 @@ nav{
 	padding-bottom: 3px;
 }
 
+#artistlink{
+	color: white;
+}
+
 button{
 	background-color: rgba(237,14,25,0.3);
 	border: 1px solid pink;
