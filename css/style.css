@@ -167,10 +167,6 @@ footer{
 	
 }
 
-.artiesten {
-
-
-}
 #upload{
 	padding: 15px;
 	text-align: center;
@@ -280,4 +276,9 @@ input[type="submit"]{
 hr{
 	margin-top: -5px;
 	margin-bottom: -7px;
+}
+
+#information{
+display: inline;
+background-color: blue;
 }

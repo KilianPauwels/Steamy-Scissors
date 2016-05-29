@@ -2,25 +2,18 @@
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="routing.js"></script>
 <!--<script src="artistScript.js"></script> -->
 
 
 </head>
 <body>
 <div id="information">
-
- <script >
-			 	
-$(document).ready(function () {
-
-$.getJSON('http://en.wikipedia.org/w/api.php?action=parse&section=0&page=Taylor_Swift&prop=text&format=json&callback=?', function(json) { 
-    $('#information').html(json.parse.text['*']); 
-    $("#information").find("a:not(.references a)").attr("href", function(){ return "http://www.wikipedia.org" + $(this).attr("href");}); 
-    $("#information").find("a").attr("target", "_blank"); 
-  });
-});
-
-			 </script>
+<script>
+		var ArtistName = window.location.hash;
+	console.log( hostName );
+		</script>
+ 
 
 </div>
 
