@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="col-md-10 col-xs-12" >
+			<h1>{{ title }}</h1>
+	</div>
+	<div class="col-md-10 col-xs-12">
+		<div class="artiesten">
+			 <div ng-repeat="artist in artists" id="artistrepeat">
+		<a ng-click="getArtist" href="#AboutArtist/{{artist.name}} " id="artistlink">{{artist.name }} </a>
+			</div>
+
+		</div>
+	</div>
+</div>
