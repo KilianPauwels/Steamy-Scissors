@@ -91,6 +91,7 @@ app.controller("artistController", function($scope,$http){
 		})
 		.error(function(error){
 			console.log(error);
+			
 		})
 });
 
