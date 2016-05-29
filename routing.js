@@ -55,7 +55,7 @@ app.controller("artistController", function($scope,$http){
 	$scope.artists =[];
 	$scope.namen = [];
 
-		$http.get("DATABASE/.json")
+		$http.get("https://burning-torch-1101.firebaseio.com/.json")
 		.success(function(results){
 			$scope.artists = results.data;
 			console.log("in succes");
