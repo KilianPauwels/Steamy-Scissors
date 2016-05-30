@@ -1,11 +1,5 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
-app.service("artistService", function(){
-	var artistName = "";
-
-	
-});
-
 app.config(function($routeProvider){
 	$routeProvider
 
@@ -30,30 +24,15 @@ app.config(function($routeProvider){
 		.when("/addArtists", {
 			templateUrl : "views/addArtists.html",
 			controller : "addArtistsController"
-		})
-
-		.when("/tracks", {
-			templateUrl : "views/tracks.html",
-			controller : "tracksController"
-		})
-
-		.when("/Artist", {
-			templateUrl: "views/artist.html",
-			controller: "artistController"
 		});
 });
 
-app.controller("startController", function($scope,$http,artistService){
+app.controller("startController", function($scope,$http){
 	$scope.title = "Top artists";
 	$scope.artists =[];
 	$scope.namen = [];
-<<<<<<< 5d77cc20dec0cbe7c29b52b661c9896ea47e297a
 
 		$http.get("https://burning-torch-1101.firebaseio.com/.json")
-=======
-	
-		$http.get("onzedatabase/.json")
->>>>>>> f325ba6249d6b300e5f2b0d3b77643b2dae8fd36
 		.success(function(results){
 			$scope.artists = results.data;
 			console.log("in succes");
@@ -96,9 +75,11 @@ app.controller("artistController", function($scope,$http){
 });
 
 app.controller("AboutArtistController", function($scope,$http){
-
+console.log("Start wikipedia API")
+$scope.title = "artists";
+$scope.artists =[];
 $(document).ready(function () {
-console.log("dit werkt")
+
 $.getJSON('http://en.wikipedia.org/w/api.php?action=parse&section=0&page=Taylor_Swift&prop=text&format=json&callback=?', function(json) { 
     $('#information').html(json.parse.text['*']); 
     $("#information").find("a:not(.references a)").attr("href", function(){ return "http://www.wikipedia.org" + $(this).attr("href");}); 
@@ -121,11 +102,7 @@ app.controller("addArtistsController", [function($scope,$http){
 		img:'',
 		name:''
 	};
-<<<<<<< 5d77cc20dec0cbe7c29b52b661c9896ea47e297a
 	var data = new Firebase("DATABASE/data")
-=======
-	var data = new Firebase("onzedatabase/data");
->>>>>>> f325ba6249d6b300e5f2b0d3b77643b2dae8fd36
 
 	this.upload = function(){
 		console.log("user clicked upload", this.artist);
@@ -134,12 +111,3 @@ app.controller("addArtistsController", [function($scope,$http){
 
 		
 }]);
-
-app.controller("artistController", [function($scope, $http, artistService){
-	$scope.artist = artistService.artist
-
-}]);
-
-app.controller("tracksController", function($scope){
-	$scope.title = "Top tracks";
-});
